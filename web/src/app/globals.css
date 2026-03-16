@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-background: #f5f0e8; /* parchment cream */
+  --color-foreground: #2b2b2b;
+  --color-primary: #b8860b; /* gold */
+  --color-accent: #ff7f50; /* coral */
+  --color-card: #fff8e1;
+  --color-muted: #e0e0e0;
+  --color-border: #d1c4e9;
+  --color-success: #4caf50;
+  --color-warning: #ff9800;
+  --radius: 0.75rem;
+  --shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+html, body {
+  min-height: 100%;
+  background: radial-gradient(circle at 30% 30%, #ffe5b4, #f5f0e8);
+  background-attachment: fixed;
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+/* Vintage parchment texture overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url('data:image/svg+xml,%3Csvg width="200" height="200" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M0 0h200v200H0z" fill="%23fff"/%3E%3Cpath d="M0 0l200 200M200 0L0 200" stroke="%23e0d5c5" stroke-width="1"/%3E%3C/svg%3E');
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Utility classes */
+.scrollbar-hide::-webkit-scrollbar {display: none;}
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
