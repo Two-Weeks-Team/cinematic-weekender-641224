@@ -1,6 +1,6 @@
 // src/app/page.tsx
 "use client";
-import { ItineraryContext } from '@/app/ItineraryContext';
+import { ItineraryContext } from "../app/ItineraryContext";
 import Hero from '@/components/Hero';
 import StatsStrip from '@/components/StatsStrip';
 import WorkspacePanel from '@/components/WorkspacePanel';
