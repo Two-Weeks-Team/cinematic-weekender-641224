@@ -1,3 +1,4 @@
+// src/app/page.tsx
 "use client";
 import { ItineraryContext } from '@/app/ItineraryContext';
 import Hero from '@/components/Hero';
