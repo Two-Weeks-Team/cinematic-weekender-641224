@@ -1,7 +1,7 @@
 "use client";
 import { useContext, useState } from "react";
 import { fetchPlan } from '@/lib/api';
-import { ItineraryContext } from '@/app/page';
+import { ItineraryContext } from '@/app/ItineraryContext';
 import { Playfair_Display } from 'next/font/google';
 import { motion } from 'framer-motion';
 import { SparklesIcon } from '@heroicons/react/24/outline';

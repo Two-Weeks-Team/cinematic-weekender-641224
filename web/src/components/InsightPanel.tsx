@@ -1,8 +1,8 @@
 "use client";
 import { useContext } from 'react';
-import { ItineraryContext } from '@/app/page';
+import { ItineraryContext } from '@/app/ItineraryContext';
 import { motion } from 'framer-motion';
-import { CalendarIcon, CloudRainIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline';
+import { CalendarIcon, CloudIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline';
 
 export default function InsightPanel() {
   const ctx = useContext(ItineraryContext);
@@ -42,7 +42,7 @@ function DemoCarousel({ data }: { data: { days: any[] } }) {
               ))}
             </ul>
             <div className="flex items-center gap-2 text-xs mt-auto">
-              <CloudRainIcon className="w-4 h-4" /> {day.weather}
+              <CloudIcon className="w-4 h-4" /> {day.weather}
               <CurrencyDollarIcon className="w-4 h-4" /> ≈ ${day.budget}
             </div>
           </motion.div>

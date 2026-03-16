@@ -1,6 +1,6 @@
 "use client";
 import { useContext } from 'react';
-import { ItineraryContext } from '@/app/page';
+import { ItineraryContext } from '@/app/ItineraryContext';
 
 export default function StatePanel() {
   const ctx = useContext(ItineraryContext);
